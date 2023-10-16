@@ -1,0 +1,19 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "UNI X HUB", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({Name = "Main", Icon = "rbxassetid://4483345998", PremiumOnly = false})
+local Section = Tab:AddSection({Name = "AutoFarm"})
+Tab:AddToggle({
+    Name = "AutoWin",
+    Default = false,
+    Callback = function(Value)
+        local autoWinEnabled = Value
+        while autoWinEnabled do
+            wait(math.random(10, 15))
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107.000183, -6.449646, -14996)
+            wait(1)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(59.8867188, 14.1414385, -15072.7578)
+            wait(1)
+            autoWinEnabled = Value
+        end
+    end
+})
