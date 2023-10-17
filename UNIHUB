@@ -3,7 +3,7 @@ local Window = OrionLib:MakeWindow({Name = "UNI X HUB", HidePremium = false, Sav
 local Tab = Window:MakeTab({Name = "Main", Icon = "rbxassetid://4483345998", PremiumOnly = false})
 local Section = Tab:AddSection({Name = "AutoFarm"})
 Tab:AddToggle({
-    Name = "AutoWin",
+    Name = "AutoWin World 4",
     Default = false,
     Callback = function(Value)
         local autoWinEnabled = Value
